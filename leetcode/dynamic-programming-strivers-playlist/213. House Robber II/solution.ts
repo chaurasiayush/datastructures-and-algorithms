@@ -1,9 +1,9 @@
-//problem link: https://leetcode.com/problems/house-robber/
+// problem link: https://leetcode.com/problems/house-robber-ii/description/
 
-function rob(nums: number[]): number {
+function rob2(nums: number[]): number {
+
     const n = nums.length;
-
-    //recusive solution
+    
     function solveRecursive(i: number) : number {
         if(i < 0) return 0;
 
@@ -58,8 +58,17 @@ function rob(nums: number[]): number {
         return previous;
     }
 
-    // return solveRecursive(n-1);  
-    // return solveMemoization(n-1);  
-    // return solveTabulation(n-1);  
-    return solveTabulationOptimized(n-1);
-};
+    //case when there is only one element
+    if(n === 1) return nums[0];
+
+    const originalNums = nums;
+    
+    nums = originalNums.map((num, i) => i? num: 0 );
+    const first = solveTabulationOptimized(n-1);
+    
+    nums = originalNums.map((num, i) => i===n-1? 0 : num );
+    const second = solveTabulationOptimized(n-1)
+    
+    return Math.max(first, second);
+}; 
+
