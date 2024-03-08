@@ -63,11 +63,11 @@ function rob2(nums: number[]): number {
 
     const originalNums = nums;
     
-    // if we took last then first can not be taken
+    // if we took last, then first can not be taken
     nums = originalNums.map((num, i) => i? num: 0 );
     const first = solveTabulationOptimized(n-1);
     
-    // if we took first then last can not be taken
+    // if we took first, then last can not be taken
     nums = originalNums.map((num, i) => i===n-1? 0 : num );
     const second = solveTabulationOptimized(n-1)
     
