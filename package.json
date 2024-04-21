@@ -1,8 +1,9 @@
 {
   "devDependencies": {
+    "@types/node": "^20.12.5",
     "tsx": "^4.7.1"
   },
-  "scripts" : {
+  "scripts": {
     "tsx": "npx tsx"
   }
 }

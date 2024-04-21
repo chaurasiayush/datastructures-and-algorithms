@@ -87,3 +87,7 @@ function findTargetSumWays(nums: number[], target: number): number {
     // return solveMemoised(n, target, dp);
     // return solveTabulated();
 };
+
+function solveTabulated(){
+    console.log(module)
+}

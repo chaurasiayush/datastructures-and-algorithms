@@ -47,3 +47,10 @@ function change(amount: number, coins: number[]): number {
     // return solveRecursive(n, amount);
     return solveTabulated();
 };
+
+function solveTabulated(){
+    console.log(module)
+}
+export default solveTabulated;
+solveTabulated();
+// solveTabulated()
