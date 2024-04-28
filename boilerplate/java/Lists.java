@@ -48,6 +48,8 @@ public class Lists {
         //alternate way of creating a two dimentional list of known size with default value
         twoDimentionalListOfKnownSizeWithDefaultValue = new ArrayList<>(Collections.nCopies(3, new ArrayList<Integer>(Collections.nCopies(3, 0))));
         System.out.println("alternate two dimentional list of known size:"  + twoDimentionalListOfKnownSizeWithDefaultValue);
+        twoDimentionalListOfKnownSizeWithDefaultValue.get(0).set(0, 3);
+        System.out.println("alternate two dimentional list of known size:"  + twoDimentionalListOfKnownSizeWithDefaultValue);
 
 
         // get an element from the list
