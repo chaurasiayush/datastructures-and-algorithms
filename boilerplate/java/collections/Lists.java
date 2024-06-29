@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lists {
@@ -62,11 +63,14 @@ public class Lists {
 
         // remove an element from List
         int removedElement = oneDimentionaListFromArray.remove(4);
+        // Collections.sort(twoDimentionalListOfKnownSize, Comparator.comparingInt(a-> a.get(0)));
         System.out.println("removed element from index 4 in one dimentional list: " + removedElement + " - " + oneDimentionaListFromArray);
 
         // get size of the list
         int size = oneDimentionaListFromArray.size();
         System.out.println("size of the list: " + size);
+
+        
         
     }
 }

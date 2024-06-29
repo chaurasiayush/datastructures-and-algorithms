@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -42,5 +44,6 @@ public class Sets {
         boolean wasRemoved = aHashSet.remove(2);
         System.out.println("remove element 2 from the set: " + wasRemoved + " - " + aHashSet);
 
+        new ArrayList<>(aHashSet);
     }
 }

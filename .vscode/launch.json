@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MiniDuckSimulator",
+            "request": "launch",
+            "mainClass": "patterns.strategy.designed.MiniDuckSimulator",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "Driver",
+            "request": "launch",
+            "mainClass": "patterns.strategy.undesigned.Driver",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/boilerplate/dotnet/bin/Debug/net8.0/boilerplate.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/boilerplate/dotnet",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
