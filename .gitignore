@@ -3,3 +3,5 @@ package-lock.json
 boilerplate/dotnet/bin
 boilerplate/dotnet/obj
 *mongodb.js
+*.class
+tmpf

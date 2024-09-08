@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "StarBuzzCoffeeShop",
+            "request": "launch",
+            "mainClass": "patterns.decoratorp.StarBuzzCoffeeShop",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "WeatherStation",
+            "request": "launch",
+            "mainClass": "patterns.observerp.WeatherStation",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "WeatherStation",
+            "request": "launch",
+            "mainClass": "patterns.observerp.designed.WeatherStation",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
             "name": "MiniDuckSimulator",
             "request": "launch",
             "mainClass": "patterns.strategy.designed.MiniDuckSimulator",
