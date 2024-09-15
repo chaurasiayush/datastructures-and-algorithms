@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -23,16 +24,21 @@ public class ComparableInterface {
     }
     public static void main(String[] args) {
         
-        Set<Pair> aset = new TreeSet<>();
+        Set<Pair> aTreeset = new TreeSet<>();
+        Set<Pair> aHashset = new HashSet<>();
 
-        for(int i=0; i<20; i++){
+        for(int i=0; i<200; i++){
             Pair aPair = new Pair((int)(Math.random()*1000), i);
-            aset.add(aPair);
+            aTreeset.add(aPair);
+            aHashset.add(aPair);
         }
 
-        for(Pair p : aset){
-            System.out.println(p);
-        }
+        System.out.println("Total pairs in TreeSet: "+ aTreeset.size());
+        System.out.println("Total pairs in Hashset: "+ aHashset.size());
+
+        // for(Pair p : aset){
+        //     System.out.println(p);
+        // }
     }
    
 }

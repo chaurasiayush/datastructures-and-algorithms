@@ -24,18 +24,20 @@ public class FileReadWrite {
         Car c2 = new Car("Lamborghini", 2020, 20000000);
         AbstractCar c3 = new Car("BMW", 2021, 20000000);
 
-        // System.out.println(c1);
-        // System.out.println(c2);
-        // System.out.println(c3);
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
 
-        FileOutputStream fo = new FileOutputStream("oos.txt");
+        FileOutputStream fo = new FileOutputStream("oos.bin");
         ObjectOutputStream os = new ObjectOutputStream(fo);
         
         os.writeObject(c1);
         os.writeObject(c2);
         os.writeObject(c3);
 
-        FileInputStream fi = new FileInputStream("oos.txt");
+        os.close();
+
+        FileInputStream fi = new FileInputStream("oos.bin");
         ObjectInputStream oi = new ObjectInputStream(fi);
 
         System.out.println(oi.readObject());
@@ -45,6 +47,8 @@ public class FileReadWrite {
         //     ArrayList<Integer> readal = (ArrayList<Integer>)readObj;
         //     System.out.println(readal);
         // }
+
+        oi.close();
         
     }
 }

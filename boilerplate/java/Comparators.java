@@ -18,12 +18,18 @@ public class Comparators {
         }
     }
     public static void main(String[] args) {
-
+        // since comparator interface is functional interface, lambdas are possible
         Comparator<Pair> comp = (Pair a, Pair b) ->{
                 return a.first - b.first;
             };
-
-        // };
+        
+        // comparators interface can be implemented directly
+        Comparator<Pair> comp2 = new Comparator<Pair>() {
+            
+            public int compare(Pair p1, Pair p2) {
+                return p1.first - p2.first;
+            }
+        };
         
         Set<Pair> aset = new TreeSet<Pair>(comp);
 

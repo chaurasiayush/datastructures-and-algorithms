@@ -22,7 +22,7 @@ public class Lists {
 
         // create one dimentional list from an array
         Integer arr[] = {1,2,3,4,5};
-        List<Integer> oneDimentionaListFromArray = new ArrayList<>(Arrays.asList(arr));
+        List<Integer> oneDimentionaListoneDimentionaListFromArrayFromArray = new ArrayList<>(Arrays.asList(arr));
         System.out.println("one dimentional list from an array:"  + oneDimentionaListFromArray);
         Collections.addAll(oneDimentionaListFromArray, arr);
         // oneDimentionaListFromArray.addAll(Arrays.asList(arr));

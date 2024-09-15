@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import javax.swing.Timer;
 
@@ -26,12 +27,13 @@ public class StreamApis {
         }
 
         
-        list.stream()
-        .filter(a -> a%2 == 0)
-        .sorted((a, b) -> b-a);
-        // .collect();
+        Stream<Integer> stream = list.stream();
+
+        List<Integer> processedList = stream.filter(a -> a%2 == 0)
+        .sorted((a, b) -> b-a)
+        .collect(Collectors.toList());
         // .map(null)
 
-        System.out.println(d);
+        System.out.println(processedList);
     }
 }

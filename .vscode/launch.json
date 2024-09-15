@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConsumersExample",
+            "request": "launch",
+            "mainClass": "ConsumersExample",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "ComparableInterface",
+            "request": "launch",
+            "mainClass": "ComparableInterface",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "CoreLatch",
+            "request": "launch",
+            "mainClass": "CoreLatch",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "datastructures-and-algorithms_961b763f"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
