@@ -86,6 +86,16 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TaskApiApplication<task-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.chaurasiayush.taskapi.task_api.TaskApiApplication",
+            "projectName": "task-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
